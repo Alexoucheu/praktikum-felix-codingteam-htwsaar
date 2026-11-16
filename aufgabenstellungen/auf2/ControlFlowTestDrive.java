@@ -6,7 +6,7 @@ public class ControlFlowTestDrive {
 		Scanner inputScanner = new Scanner(System.in);
 		
 		System.out.println("Geben Sie Ihren Vornamen ein: ");
-		String firstName = inputScanner.nextLine().trim();
+		String firstName = inputScanner.nextLine().trim();  /*.trim() hier und nicht mit dem if um gleich den richtige Format zu setzen (damit er formatiert aussieht, wenn der Name 'geprint' wird).*/
 		
 		if (firstName.isEmpty()) {
 			System.out.println("Fehler. Bitte geben Sie einen gültigen Namen ein.");
